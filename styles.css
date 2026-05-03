@@ -260,6 +260,7 @@ h4 { font-size: 1.25rem; font-weight: 700; }
 }
 
 .hero h1 { margin-bottom: 24px; }
+.hero h1 br { display: block; }
 
 .hero-sub {
     font-size: 1.15rem;
