@@ -101,6 +101,12 @@ h4 { font-size: 1.25rem; font-weight: 700; }
 }
 .btn-ghost:hover { background: var(--dark); color: var(--cream); }
 
+.btn-lite {
+    background: #fec1bc;
+    color: var(--dark);
+}
+.btn-lite:hover { background: #fbb0aa; transform: translateY(-2px); }
+
 .btn-block { width: 100%; }
 
 /* ============ Navigation ============ */
@@ -305,6 +311,49 @@ h4 { font-size: 1.25rem; font-weight: 700; }
 .about-text p {
     color: var(--gray);
     margin-bottom: 16px;
+}
+
+.about-subhead {
+    margin-top: 28px;
+    margin-bottom: 12px;
+    color: var(--dark);
+    font-weight: 800;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+.about-list li {
+    color: var(--gray);
+    margin-bottom: 12px;
+    padding-right: 18px;
+    position: relative;
+    line-height: 1.6;
+}
+.about-list li::before {
+    content: '✦';
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--accent, var(--dark));
+    font-weight: 700;
+}
+.about-list strong {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.about-cta {
+    margin-top: 24px;
+    padding: 18px 22px;
+    background: var(--pink-soft);
+    border-radius: var(--radius-md);
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 .about-pills {
@@ -749,9 +798,10 @@ h4 { font-size: 1.25rem; font-weight: 700; }
     .nav-links { display: none; }
     .nav-toggle { display: block; }
     .hero { grid-template-columns: 1fr; min-height: auto; }
-    .hero-image { min-height: 50vh; aspect-ratio: 16/10; }
+    .hero-image { min-height: 0; height: auto; aspect-ratio: 3/2; }
+    .hero-image img { height: auto; aspect-ratio: 3/2; }
     .hero-image::after {
-        background: linear-gradient(to bottom, transparent 50%, var(--cream));
+        background: linear-gradient(to bottom, transparent 60%, var(--cream));
     }
     .hero-content { padding: 60px 24px; text-align: center; }
     .hero-sub { margin-left: auto; margin-right: auto; }
