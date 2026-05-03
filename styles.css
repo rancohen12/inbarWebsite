@@ -107,6 +107,32 @@ h4 { font-size: 1.25rem; font-weight: 700; }
 }
 .btn-lite:hover { background: #fbb0aa; transform: translateY(-2px); }
 
+.designed-with-touch {
+    line-height: 1.05;
+    text-align: center;
+}
+.dwt-script {
+    font-family: 'Great Vibes', cursive;
+    color: #d65a1c;
+    font-size: clamp(2.6rem, 5.5vw, 4rem);
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.dwt-bold {
+    font-family: 'Rubik', sans-serif;
+    color: var(--green);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+}
+
+.btn-orange {
+    background: var(--white);
+    color: #fc712c;
+    box-shadow: 0 6px 20px rgba(252, 113, 44, 0.3);
+}
+.btn-orange:hover { background: #fff; color: #d85515; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(252, 113, 44, 0.45); }
+
 .btn-block { width: 100%; }
 
 /* ============ Navigation ============ */
@@ -347,9 +373,6 @@ h4 { font-size: 1.25rem; font-weight: 700; }
 
 .about-cta {
     margin-top: 24px;
-    padding: 18px 22px;
-    background: var(--pink-soft);
-    border-radius: var(--radius-md);
     color: var(--dark);
     font-weight: 700;
     font-size: 1.1rem;
@@ -396,6 +419,15 @@ h4 { font-size: 1.25rem; font-weight: 700; }
 .why-icon {
     font-size: 2.5rem;
     margin-bottom: 16px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.why-icon img {
+    max-height: 64px;
+    width: auto;
+    object-fit: contain;
 }
 .why-card h3 {
     font-size: 1.25rem;
@@ -432,17 +464,25 @@ h4 { font-size: 1.25rem; font-weight: 700; }
 .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
 
 .service-card-featured {
-    border-color: var(--green);
+    border-color: #fc712c;
     transform: scale(1.03);
+    background: #fc712c url('images/focus-bg.png') center/cover no-repeat;
+    color: var(--white);
 }
 .service-card-featured:hover { transform: scale(1.03) translateY(-8px); }
+.service-card-featured h3,
+.service-card-featured .service-tagline,
+.service-card-featured .service-desc,
+.service-card-featured .service-features li { color: var(--white); }
+.service-card-featured .service-features li::before { color: var(--white); }
+.service-card-featured .service-num { background: rgba(255,255,255,0.95); color: #fc712c; }
 
 .service-badge {
     position: absolute;
     top: 20px;
     left: 20px;
-    background: var(--green);
-    color: var(--white);
+    background: var(--white);
+    color: #fc712c;
     padding: 6px 16px;
     border-radius: 999px;
     font-size: 0.8rem;
