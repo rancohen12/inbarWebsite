@@ -465,17 +465,17 @@ h4 { font-size: 1.25rem; font-weight: 700; }
 .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
 
 .service-card-featured {
-    border-color: #fc712c;
+    border-color: var(--green);
     transform: scale(1.03);
 }
 .service-card-featured:hover { transform: scale(1.03) translateY(-8px); }
-.service-card-featured .service-tagline { color: #fc712c; }
+.service-card-featured .service-tagline { color: var(--green); }
 
 .service-badge {
     position: absolute;
     top: 20px;
     left: 20px;
-    background: #fc712c;
+    background: var(--green);
     color: var(--white);
     padding: 6px 16px;
     border-radius: 999px;
